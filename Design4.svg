@@ -5381,16 +5381,6 @@
     </p:metadata>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient11605"
-       id="linearGradient11611"
-       x1="527.51903"
-       y1="235.35597"
-       x2="886.77351"
-       y2="235.35597"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.54361874,0,0,0.54361874,363.50726,-57.734193)" />
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#SVGID_21_"
        id="linearGradient11778"
        gradientUnits="userSpaceOnUse"
@@ -6854,9 +6844,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="747.36017"
-     inkscape:cy="679.06883"
+     inkscape:zoom="1.979899"
+     inkscape:cx="737.95226"
+     inkscape:cy="738.99003"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -6890,9 +6880,9 @@
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect11732"
        width="342.85715"
-       height="174.28572"
+       height="150.04205"
        x="334.80997"
-       y="89.235191"
+       y="101.35703"
        rx="12.959476"
        ry="0"
        inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
@@ -7228,7 +7218,7 @@
        style="opacity:0.25;fill:#7f7f7f"
        inkscape:connector-curvature="0"
        id="rect3817"
-       d="m 429.09644,171.28252 v -58.33219 c 0,-3.25473 3.14201,-5.87498 7.04493,-5.87498 h 203.2976 c 3.90291,0 7.04492,2.62025 7.04492,5.87498 v 58.33219 H 429.09786 z"
+       d="m 430.61167,171.53506 v -58.33219 c 0,-3.25473 3.14201,-5.87498 7.04493,-5.87498 h 203.2976 c 3.90291,0 7.04492,2.62025 7.04492,5.87498 v 58.33219 H 430.61309 z"
        inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
        inkscape:export-xdpi="450"
        inkscape:export-ydpi="450" />
@@ -7242,23 +7232,6 @@
        inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
        inkscape:export-xdpi="450"
        inkscape:export-ydpi="450" />
-    <path
-       style="fill:#008000;fill-opacity:1;stroke:none"
-       d="m 703.40062,146.53213 0,5.125 c 0.68516,1.72626 2.36777,2.93749 4.34375,2.93749 l 27.4375,0 c 2.58826,0 4.65625,-2.09924 4.65625,-4.68749 l 0,-3.375 -36.4375,0 z"
-       id="rect5130"
-       inkscape:connector-curvature="0" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text3928-93-5"
-       y="125.16856"
-       x="446.86246"
-       style="font-size:4.03860807000000040px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-       xml:space="preserve"><tspan
-         style="font-size:4.03860807000000040px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#008000;font-family:Calibri;-inkscape-font-specification:Calibri"
-         y="125.16856"
-         x="446.86246"
-         id="tspan3930-1-9"
-         sodipodi:role="line">Registration</tspan></text>
     <g
        p:type="Shape"
        p:def="Evolus.Sketchy.GUI:button"
@@ -7484,6 +7457,11 @@
        inkscape:export-xdpi="450"
        inkscape:export-ydpi="450" />
     <path
+       style="fill:#008000;fill-opacity:1;stroke:none"
+       d="m 292.05572,131.59803 0,3.76287 c 0.50306,1.26745 1.73846,2.15676 3.18926,2.15676 l 20.14514,0 c 1.90035,0 3.4187,-1.5413 3.4187,-3.44164 l 0,-2.47799 -26.7531,0 z"
+       id="rect5130"
+       inkscape:connector-curvature="0" />
+    <path
        d="m 393.85695,235.37204 a 6.6244526,6.0110691 0 1 0 -13.2489,0 6.6244526,6.0110691 0 1 0 13.2489,0"
        id="path4746"
        inkscape:connector-curvature="0"
@@ -7583,35 +7561,56 @@
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
        inkscape:connector-curvature="0"
        id="path3966"
-       d="m 368.32894,209.88022 -1.34544,0 0,-5.8304 1.34544,0 0,5.8304 z" />
+       d="m 368.32894,209.88022 -1.34544,0 0,-5.8304 1.34544,0 0,5.8304 z"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
     <path
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
        inkscape:connector-curvature="0"
        id="path3968"
-       d="m 368.77048,209.88022 0,-4.03658 c 0,-0.49036 0.17642,-0.91041 0.52927,-1.26017 0.35286,-0.34974 0.77446,-0.52462 1.26482,-0.52462 l 2.69087,-0.009 c 0.49638,0.006 0.91949,0.18391 1.26934,0.53365 0.34983,0.34976 0.52475,0.77282 0.52476,1.2692 l 0,4.02755 -1.34571,0 0,-4.03658 c -10e-6,-0.11351 -0.0418,-0.21215 -0.12551,-0.29592 -0.0837,-0.0838 -0.17634,-0.13157 -0.27798,-0.14344 -0.006,1e-5 -0.0135,1e-5 -0.0225,0 -0.009,1e-5 -0.0164,1e-5 -0.0225,0 l -2.69087,-0.009 c -0.11971,0.006 -0.22442,0.0524 -0.31411,0.13906 -0.0897,0.0867 -0.13455,0.19281 -0.13455,0.31836 l 0,4.02754 -1.34543,0 z" />
+       d="m 368.77048,209.88022 0,-4.03658 c 0,-0.49036 0.17642,-0.91041 0.52927,-1.26017 0.35286,-0.34974 0.77446,-0.52462 1.26482,-0.52462 l 2.69087,-0.009 c 0.49638,0.006 0.91949,0.18391 1.26934,0.53365 0.34983,0.34976 0.52475,0.77282 0.52476,1.2692 l 0,4.02755 -1.34571,0 0,-4.03658 c -10e-6,-0.11351 -0.0418,-0.21215 -0.12551,-0.29592 -0.0837,-0.0838 -0.17634,-0.13157 -0.27798,-0.14344 -0.006,1e-5 -0.0135,1e-5 -0.0225,0 -0.009,1e-5 -0.0164,1e-5 -0.0225,0 l -2.69087,-0.009 c -0.11971,0.006 -0.22442,0.0524 -0.31411,0.13906 -0.0897,0.0867 -0.13455,0.19281 -0.13455,0.31836 l 0,4.02754 -1.34543,0 z"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
     <path
        inkscape:connector-curvature="0"
        id="path3970"
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#008000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
-       d="m 377.74889,205.39525 -2.23344,0 0,-1.34543 5.82136,0 0,1.34543 -2.24248,0 0,4.494 -1.34544,0 0,-4.494 z" />
+       d="m 377.74889,205.39525 -2.23344,0 0,-1.34543 5.82136,0 0,1.34543 -2.24248,0 0,4.494 -1.34544,0 0,-4.494 z"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
     <path
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
        inkscape:connector-curvature="0"
        id="path3972-9"
-       d="m 383.13282,208.08612 c 0,0.0958 0.0314,0.18108 0.0942,0.25581 0.0628,0.0747 0.13304,0.12998 0.21078,0.16575 0.0239,0.0121 0.0479,0.0211 0.0719,0.0271 0.024,0.006 0.0479,0.009 0.0719,0.009 l 3.58791,-0.009 0,1.34544 -3.58791,0 c -0.49037,0 -0.91197,-0.17492 -1.26482,-0.52477 -0.35286,-0.34983 -0.52928,-0.76993 -0.52928,-1.2603 0,1e-5 0,-0.11811 0,-0.35435 0,-0.23624 0,-0.49488 0,-0.77592 0,-0.25713 0,-0.49629 0,-0.71748 0,-0.22117 0,-0.35275 0,-0.39473 0,-0.49638 0.17642,-0.91944 0.52928,-1.2692 0.35285,-0.34974 0.77445,-0.52462 1.26482,-0.52462 l 3.53399,-0.009 0,1.34543 -3.53399,0 c -0.11972,0.006 -0.22443,0.0524 -0.31412,0.13906 -0.0897,0.0867 -0.13455,0.19281 -0.13455,0.31836 l 0,0.43963 3.81239,0 0,1.34543 -3.81239,0 0,0.44839 z" />
+       d="m 383.13282,208.08612 c 0,0.0958 0.0314,0.18108 0.0942,0.25581 0.0628,0.0747 0.13304,0.12998 0.21078,0.16575 0.0239,0.0121 0.0479,0.0211 0.0719,0.0271 0.024,0.006 0.0479,0.009 0.0719,0.009 l 3.58791,-0.009 0,1.34544 -3.58791,0 c -0.49037,0 -0.91197,-0.17492 -1.26482,-0.52477 -0.35286,-0.34983 -0.52928,-0.76993 -0.52928,-1.2603 0,1e-5 0,-0.11811 0,-0.35435 0,-0.23624 0,-0.49488 0,-0.77592 0,-0.25713 0,-0.49629 0,-0.71748 0,-0.22117 0,-0.35275 0,-0.39473 0,-0.49638 0.17642,-0.91944 0.52928,-1.2692 0.35285,-0.34974 0.77445,-0.52462 1.26482,-0.52462 l 3.53399,-0.009 0,1.34543 -3.53399,0 c -0.11972,0.006 -0.22443,0.0524 -0.31412,0.13906 -0.0897,0.0867 -0.13455,0.19281 -0.13455,0.31836 l 0,0.43963 3.81239,0 0,1.34543 -3.81239,0 0,0.44839 z"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
     <path
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
        inkscape:connector-curvature="0"
        id="path3974"
-       d="m 387.62135,204.04982 c 0,0.006 0.23172,0.009 0.69516,0.009 0.46345,0 0.97319,0 1.52926,0 0.47849,0 0.92852,0 1.35008,0 0.42156,0 0.6922,0 0.81192,0 0.49619,0 0.91921,0.17488 1.26906,0.52462 0.34983,0.34976 0.52475,0.77282 0.52476,1.2692 -10e-6,0.2033 -0.0299,0.39615 -0.0896,0.57855 -0.0598,0.18241 -0.13747,0.35135 -0.23309,0.50683 0.13741,0.15549 0.24203,0.33191 0.31384,0.52928 0.0718,0.19737 0.10771,0.40664 0.10772,0.62782 l 0,1.78507 -1.34571,0 0,-1.7941 c 0,-0.10749 -0.0374,-0.20311 -0.11209,-0.28688 -0.0747,-0.0838 -0.16293,-0.13459 -0.26457,-0.15247 -0.0119,0 -0.18378,0 -0.51573,0 -0.33196,0 -0.69522,0 -1.08976,0 -0.40076,0 -0.76858,0 -1.10345,0 -0.33488,0 -0.50232,0 -0.50232,0 l 0,2.24248 -1.34543,0 0,-5.83943 z m 4.43104,1.34543 -3.08561,0 0,0.89705 3.08561,0 c 0.11971,0.006 0.22441,-0.0358 0.31412,-0.12551 0.0897,-0.0897 0.13453,-0.1944 0.13454,-0.31412 -1e-5,-0.12555 -0.0448,-0.23167 -0.13454,-0.31836 -0.0897,-0.0867 -0.19441,-0.13002 -0.31412,-0.13003 z" />
+       d="m 387.62135,204.04982 c 0,0.006 0.23172,0.009 0.69516,0.009 0.46345,0 0.97319,0 1.52926,0 0.47849,0 0.92852,0 1.35008,0 0.42156,0 0.6922,0 0.81192,0 0.49619,0 0.91921,0.17488 1.26906,0.52462 0.34983,0.34976 0.52475,0.77282 0.52476,1.2692 -10e-6,0.2033 -0.0299,0.39615 -0.0896,0.57855 -0.0598,0.18241 -0.13747,0.35135 -0.23309,0.50683 0.13741,0.15549 0.24203,0.33191 0.31384,0.52928 0.0718,0.19737 0.10771,0.40664 0.10772,0.62782 l 0,1.78507 -1.34571,0 0,-1.7941 c 0,-0.10749 -0.0374,-0.20311 -0.11209,-0.28688 -0.0747,-0.0838 -0.16293,-0.13459 -0.26457,-0.15247 -0.0119,0 -0.18378,0 -0.51573,0 -0.33196,0 -0.69522,0 -1.08976,0 -0.40076,0 -0.76858,0 -1.10345,0 -0.33488,0 -0.50232,0 -0.50232,0 l 0,2.24248 -1.34543,0 0,-5.83943 z m 4.43104,1.34543 -3.08561,0 0,0.89705 3.08561,0 c 0.11971,0.006 0.22441,-0.0358 0.31412,-0.12551 0.0897,-0.0897 0.13453,-0.1944 0.13454,-0.31412 -1e-5,-0.12555 -0.0448,-0.23167 -0.13454,-0.31836 -0.0897,-0.0867 -0.19441,-0.13002 -0.31412,-0.13003 z"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
     <path
        style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
        inkscape:connector-curvature="0"
        id="path3976"
-       d="m 395.69423,209.88022 -1.34543,0 0,-1.34544 1.34543,0 0,1.34544 z" />
+       d="m 395.69423,209.88022 -1.34543,0 0,-1.34544 1.34543,0 0,1.34544 z"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450" />
     <g
        id="g3978"
-       transform="matrix(0.26383281,0,0,0.26383281,335.41267,173.5001)">
+       transform="matrix(0.26383281,0,0,0.26383281,335.41267,173.5001)"
+       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+       inkscape:export-xdpi="450"
+       inkscape:export-ydpi="450">
       <path
          sodipodi:nodetypes="cccccccccccc"
          style="font-size:51.96397018px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two"
@@ -7845,30 +7844,6 @@
          x="500.17029"
          id="tspan10604-1"
          sodipodi:role="line">Join Event</tspan></text>
-    <g
-       transform="matrix(0.70577047,0,0,0.70577047,44.884316,45.206682)"
-       id="g11742-9"
-       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
-       inkscape:export-xdpi="450"
-       inkscape:export-ydpi="450">
-      <text
-         sodipodi:linespacing="125%"
-         id="text11744-5"
-         y="125.25658"
-         x="447.17627"
-         style="font-size:4.03860807px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
-         xml:space="preserve"><tspan
-           style="font-size:4.03860807px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
-           y="125.25658"
-           x="447.17627"
-           id="tspan11746-8"
-           sodipodi:role="line">Registration</tspan></text>
-      <path
-         style="fill:none;stroke:#000000;stroke-width:0.22689249px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 446.67129,125.95953 20.37346,0"
-         id="path11748-9"
-         inkscape:connector-curvature="0" />
-    </g>
     <use
        height="1"
        width="1"
@@ -8545,5 +8520,81 @@
     <g
        transform="matrix(1.4232651,0,0,1.4232651,-8.2780648,-135.32436)"
        id="g12997-4" />
+    <g
+       id="g13170"
+       transform="translate(4.2931483,-1.5152288)">
+      <rect
+         style="fill:#e3e2db;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect13162"
+         width="31.688049"
+         height="6.7565284"
+         x="443.06137"
+         y="120.38147"
+         ry="0"
+         inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+         inkscape:export-xdpi="450"
+         inkscape:export-ydpi="450" />
+      <text
+         inkscape:export-ydpi="450"
+         inkscape:export-xdpi="450"
+         inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+         transform="scale(0.99445028,1.0055807)"
+         sodipodi:linespacing="125%"
+         id="text11744-5-1"
+         y="124.16084"
+         x="456.07364"
+         style="font-size:3.67167306px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         xml:space="preserve"><tspan
+           style="font-size:3.67167306px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;font-family:Calibri;-inkscape-font-specification:Calibri"
+           y="124.16084"
+           x="456.07364"
+           id="tspan11746-8-7"
+           sodipodi:role="line">Registration</tspan></text>
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path13164"
+         d="m 449.1031,124.99039 0.70536,-1.07336 -0.70536,-1.07336 2.64724,1.07336 z"
+         inkscape:transform-center-x="-0.44120851"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+    <g
+       transform="matrix(0.72537249,0,0,0.72537249,39.606881,42.696753)"
+       id="g13170-3">
+      <rect
+         style="fill:#e3e2db;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.82716125;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect13162-3"
+         width="31.688049"
+         height="6.7565284"
+         x="443.06137"
+         y="120.38147"
+         ry="0"
+         inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+         inkscape:export-xdpi="450"
+         inkscape:export-ydpi="450" />
+      <text
+         inkscape:export-ydpi="450"
+         inkscape:export-xdpi="450"
+         inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\Design4.png"
+         transform="scale(0.99445028,1.0055807)"
+         sodipodi:linespacing="125%"
+         id="text11744-5-1-0"
+         y="124.16084"
+         x="456.07364"
+         style="font-size:3.67167306px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         xml:space="preserve"><tspan
+           style="font-size:3.67167306px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;font-family:Calibri;-inkscape-font-specification:Calibri"
+           y="124.16084"
+           x="456.07364"
+           id="tspan11746-8-7-7"
+           sodipodi:role="line">Registration</tspan></text>
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path13164-6"
+         d="m 449.1031,124.99039 0.70536,-1.07336 -0.70536,-1.07336 2.64724,1.07336 z"
+         inkscape:transform-center-x="-0.44120851"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
   </g>
 </svg>
