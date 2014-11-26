@@ -10,10 +10,10 @@
 $primary-color-light: #31a805; 
 $primary-color-dark: #087f01;
 
-html{
-  @include background-image(linear-gradient(to bottom right, white, #dddddd));
-  height: 100%;
-  font-family: "Calibri";
+.body{
+    background-color: #FFF;
+    background-image: linear-gradient(to right, #F0F0F0, #FFF 80%, #F0F0F0);
+    font-family: "Calibri";
   
 }
 a{
@@ -30,6 +30,7 @@ input{
 	display: block;
         background-color: transparent;
         margin-bottom: 5px;
+        font-size: 1em;
 }
 label{
     @include background-image(linear-gradient(to bottom right, $primary-color-light, $primary-color-dark));
