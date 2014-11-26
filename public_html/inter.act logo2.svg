@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="145.28522"
-   height="41.310898"
+   width="150.28999"
+   height="50"
    id="svg4776"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="inter.act logo2.svg">
   <defs
      id="defs4778" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="248.86917"
-     inkscape:cy="-155.91971"
+     inkscape:zoom="3.959798"
+     inkscape:cx="100.15849"
+     inkscape:cy="-14.858677"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -55,7 +55,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-178.08532,-110.77521)">
+     transform="translate(-178.08532,-102.08611)">
     <rect
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3840"
@@ -69,13 +69,10 @@
        inkscape:export-xdpi="400"
        inkscape:export-ydpi="400" />
     <g
-       id="g3983"
-       transform="matrix(0.28329469,0,0,0.28329469,148.32355,86.879731)"
-       inkscape:export-xdpi="400"
-       inkscape:export-ydpi="400"
-       inkscape:export-filename="C:\Users\Daniel\Inkscape Projekte\inter.act logo2.png">
+       id="g3006"
+       transform="translate(2.7779195,-3.5355339)">
       <g
-         transform="matrix(3.9760274,0,0,3.9760274,-449.20654,-351.9823)"
+         transform="matrix(1.1263874,0,0,1.1263874,21.065723,-12.834986)"
          id="text3875"
          style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Terminator Two;-inkscape-font-specification:Terminator Two">
         <path
@@ -105,7 +102,7 @@
            d="m 229.02275,137.16399 -4.19983,0 0,-4.19983 4.19983,0 0,4.19983 z" />
       </g>
       <g
-         transform="matrix(3.2745157,0,0,3.2745157,-286.78011,-258.14013)"
+         transform="matrix(0.92765291,0,0,0.92765291,67.080268,13.750003)"
          id="g3978">
         <path
            inkscape:connector-curvature="0"
