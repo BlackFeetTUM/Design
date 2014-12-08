@@ -1,0 +1,275 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05.12.2014, 20:23:24
+    Author     : Daniel
+*/
+html, body{
+    margin: 0px;
+}
+
+body {
+  background-color: #FFF;
+  background-image: linear-gradient(to right, #f0f0f0, #ffffff 80%, #f0f0f0);
+  font-family: "Calibri";
+}
+#header{
+    //background-image: linear-gradient(to bottom, #2fa805, #087f01);
+    min-width: 200px;
+    margin-bottom: 70px;
+}
+#header div{
+    float: left;
+    width: 17%;
+    height: 30px;
+    padding-top: 5px;
+    border-bottom-color:  black;
+    border-bottom-width: 1px;
+    border-bottom-style:  solid;
+    background-image: linear-gradient(to bottom, #2fa805, #087f01);
+    text-align: center;
+    cursor: pointer;
+}
+#header #statistics{
+    width: 25%;
+}
+
+#header #statistics:hover #statisticsmenu{
+    left: 0px;
+    
+}
+
+#header #statisticsmenu{
+    position: absolute;
+    height: auto;
+    width: 25%;
+    padding: 0px;
+    min-width: 100px;
+    left: -999px;
+    top: 36px;
+    background: #57AA48;
+    z-index: 2;
+}
+ul{
+    list-style: none;
+    padding: 0 0;
+    margin: 0px;
+    border-style: none;
+}
+
+li{
+    padding: 5px;
+}
+
+li:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+#header #navigation{
+    border-right: solid black 1px;
+}
+
+
+#header #dashboard{
+    width: 40%;
+    height: 50px;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-top: none;
+    cursor: default;
+}
+
+@media all and (max-width: 550px){
+    #header{
+        margin-bottom: 20px;
+    }
+    #header #dashboard{
+        display: none;
+    }
+    #header div{
+        width: 32%;
+        border-right-color:  black;
+        border-right-width: 2px;
+        border-right-style:  solid;
+        border-bottom-color:  black;
+        border-bottom-width: 1px;
+        border-bottom-style:  solid;
+    }
+    #header #statistics{
+        width: 32%;
+    }
+    #header #statisticsmenu{
+        width: 32%;
+    }
+    #header #navigation{
+        border-right-width: 2px;
+    }
+}
+
+
+
+#content{
+  display: block;
+  position: static;
+  width: 100%;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+/*#questionalert{
+    width: 270px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}*/
+.personcounter{
+    width: 270px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+#questionalert button{
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AAA;
+    width: 25px;
+    background-color: #FFF;
+    position: relative;
+    top: -40px;
+    left: 40px;
+}
+#questionalert h2{
+    font-size: 26px;
+    margin: 0px;
+}
+
+.personcounter h2{
+    font-size: 35px;
+    margin-bottom: 0px;
+    position: relative;
+    left: -30px;
+}
+
+#questions{
+    font-size: 3em;
+    position: relative;
+    text-align: right;
+    right: 115px;
+}
+
+.spectators{
+    font-size: 90px;
+    position: relative;
+    line-height: 1em;
+}
+.chartcontainer{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #2fa805;
+    font-size: 15px;
+}
+
+.chartcontainer, #questionalert{
+    border-width: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    width: 270px;
+    margin: 0 50px;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: "Calibri";
+    padding-top: 10px;
+    float: left;
+    cursor: pointer;
+}
+#questionalert{
+    text-align: center;
+    height: 140px;
+    border-color: transparent;
+}
+@media all and (max-width: 410px){
+    .chartcontainer{
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    #questionalert, .personcounter{
+       float: none;
+       margin: 0 auto;
+       margin-bottom: 10px;
+    }
+}
+.chartcontainer select{
+    position: absolute;
+    left: 80px;
+    top: 10px;
+    font-family: "Calibri";
+    font-size: 18px;
+    text-align: center;
+}
+.chartcontainer button{
+    position: absolute;
+    left: 200px;
+    top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #AAA;
+    width: 25px;
+    background-color: #FFF;
+    z-index: 1;
+}
+.slowfast{
+    width: 220px;
+    position: relative;
+    left: 35px;
+}
+.linepie, .barchart, .range, .piechart, .xborder, .xborder2{
+    position: static;
+    padding-top: 30px;
+
+}
+
+.barchart rect:hover{
+    fill: orange;
+}
+
+.xaxis text, yaxis text{
+    font: 10px sans-serif;
+}
+.xaxis path, .yaxis path, .axis line{
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+    //shape-rendering: crispEdges;
+}
+
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0px;
+    visibility: hidden;
+
+}
+
+#logo {
+  display: block;
+  margin: auto auto;
+  width: 25%;
+  max-width: 250px;
+  min-width: 150px;
+}

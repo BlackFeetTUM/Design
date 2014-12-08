@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="dashboard.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="Container.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <div id="header" class="clearfix">
+            <div id="statistics">Statistics
+                <div id="statisticsmenu">
+                    <ul>
+                        <li id="speedcontrol">Speedcontrol</li>
+                        <li>Question alert</li>
+                        <li id="students">Students</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="dashboard">Dashboard</div>
+            <div id="navigation">Navigation</div>
+            <div id="stopevent">Stop event</div>
+        </div>
+
+        
+        <div id="content" class="clearfix">
+        <script>
+            var switcher = 0;
+            var numPersons = 200; 
+            test1 = new ChartControl();
+            d3.select("#speedcontrol").on("click", function(){
+                test1.addChart("range");
+            });
+            d3.select("#students").on("click", function(){
+                test1.addChart("personcounter");
+            });
+            test1.addChart("personcounter");
+            test1.addChart("barchart");
+            crazy = new QuestionAlert("depp");
+            var data = generateData(5,numPersons);
+            test1.actualize(data);
+            setInterval(function(){
+                var result = countPersons();
+                if(result < 0 && numPersons > 0){
+                    numPersons += result;
+                }else if(result >= 0){
+                    numPersons += result;
+                }               
+                crazy.actualize();
+                data = generateData(5, numPersons);
+//                if(switcher === 3){
+//                    data = generateData(5, 0);
+//                    switcher = 0;
+//                }else{
+//                    data = generateData(5, 200);
+//                    switcher += 1;
+//                }
+                test1.actualize(data);                
+            }, 3000);
+        </script>            
+            
+        </div>
+        <img id="logo" src="inter.act logo2.svg" alt="logo"/>
+    </body>
+</html>
