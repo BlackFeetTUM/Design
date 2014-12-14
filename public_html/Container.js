@@ -59,10 +59,83 @@
         };
         
     }
-   
+    
+    function PersonControl(){
+        this.chartlist = [];
+        this.chartNameList = ["Number", "Timeline"];
+        var chartcounter = 0;
+        var number_height = 140;
+        var timeline_height = 260;
+       
+        this.addChart = function(chart){
+            chartcounter += 1;
+            var id = "chartcontainer" + chartcounter;
+            var chartcounter2 = chartcounter;
+            var copy = this;
+            $("#content").append("<div class='personchartcontainer' id='" + id + "'></div>");
+            var auswahl = d3.select("#" + id).append("select");
+            for(i in this.chartNameList){
+                var option = auswahl.append("option").text(this.chartNameList[i]);
+                if(this.chartNameList[i].toUpperCase() === chart.toUpperCase()){
+                    option.attr("selected", "selected");
+                }
+            }
+            var button = d3.select("#" + id).append("button");
+            button.text("X");
+            if(chart === "number"){
+                $("#" + id).css("height", number_height);
+                auswahl.style("display", "none");
+                i = new Personcounter(id, chartcounter);
+            }
+            if(chart === "timeline"){
+                $("#" + id).css("height", timeline_height);
+                i = new Timeline(id, chartcounter, true);
+            }
+            
+            //DELETE BUTTON                      
+            button.on("click", function(){
+                   copy.remove("chart" + chartcounter2);
+                   $(".chartcontainer#" + id).remove();
+               });
+
+            $(".chartcontainer").draggable();
+            this.chartlist[i.getName()] = i;
+                       
+            //CHART-SELECTBOX            
+            auswahl.on("change", function(){copy.changeCharttype(chartcounter2, this[this.selectedIndex].text);});   
+        };
+        
+        this.changeCharttype = function(id, charttype){
+            var copy = this;
+            $("#chart" + id).remove();
+            $("#personchartcontainer" + id + " .slowfast").remove();
+            copy.remove("chart" + id);
+            var container = d3.select("#personchartcontainer" + id);
+            if(charttype === "Number"){
+                container.style("height", number_height + "px");
+                i = new Personcounter("personchartcontainer" + id, id);
+            
+            }else if(charttype === "Timeline"){
+                container.style("height", timeline_height + "px");
+                i = new Timeline("personchartcontainer" + id, id, false);
+            }
+            this.chartlist[i.getName()] = i;
+            
+        };
+       
+        this.actualize = function(data){
+           for(var a in this.chartlist){
+               this.chartlist[a].update(data);
+            } 
+        };
+       
+        this.remove = function(name){
+           delete this.chartlist[name];
+        };
+    }
     function ChartControl(){
        this.chartlist = [];
-       this.chartNameList = ["Barchart", "Linepie", "Range", "Piechart", "Xborder", "Xborder2"];
+       this.chartNameList = ["Barchart", "Linepie", "Range", "Piechart", "Xborder", "Xborder2", "Timeline"];
        var chartcounter = 0;
        var barchart_height = 260;
        var linepie_height = 140;
@@ -70,6 +143,7 @@
        var piechart_height = 260;
        var xborder_height = 140;
        var xborder2_height = 140;
+       var timeline_height = 260;
        var personcounter_height = 140;
 
        this.addChart = function(chart){
@@ -114,6 +188,10 @@
             if(chart === "xborder2"){
                 $("#" + id).css("height", xborder2_height);
                 i = new Crossingborder2(id, chartcounter);
+            }
+            if(chart === "timeline"){
+                $("#" + id).css("height", timeline_height);
+                i = new Timeline(id, chartcounter, false);
             }
             if(chart === "personcounter"){
                 $("#" + id).css("height", personcounter_height);
@@ -163,6 +241,10 @@
             }else if(charttype === "Xborder2"){
                 container.style("height", xborder2_height + "px");
                 i = new Crossingborder2("chartcontainer" + id, id);
+            
+            }else if(charttype === "Timeline"){
+                container.style("height", timeline_height + "px");
+                i = new Timeline("chartcontainer" + id, id, false);
             }
             this.chartlist[i.getName()] = i;
             
@@ -234,7 +316,6 @@
     }
 
     function Barchart(colorArray, container, id){
-        Barchart.counter += 1;
         var colorArray = colorArray;
         var name = "chart" + id;
         var svgwidth = 270;
@@ -667,4 +748,192 @@
         $("#personcounter").draggable();
     }
         
+    function Timeline(container, id, countpersons){
+     var name = "chart" + id;
+     var margin_right = 20;
+     var svgwidth = 270 - margin_right;
+     var svgheight = 180;
+     var y_legend_leftspace = 50;
+     var y_legend_topspace = 10;
+     var x_legend_space = 20;
+     
+     var chartheight = svgheight - y_legend_topspace - x_legend_space;
+     var chartwidth = svgwidth - y_legend_leftspace;
+     var svg = d3.select("#" + container).append("svg")
+             .attr("class", "timeline")
+             .attr("id", "chart" + id)
+             .attr("height", svgheight)
+             .attr("width", svgwidth);
+
+     var content = svg.append("g")
+             .attr("class", "content");    
+
+     var x_max = 0;
+
+     var xAxisScale = d3.scale.linear()
+             .domain([0,x_max])
+             .range([0,chartwidth]);
+
+    if(countpersons === false){         
+        var yAxisScale = d3.scale.linear()
+                .domain([1, 5])
+                .range([chartheight, 0]);
+
+        var yAxis = d3.svg.axis()
+                .scale(yAxisScale)
+                .orient("left")
+                .ticks(5, ">")
+                .tickSize(5,0);
+        
+        var yAxisContainer = content.append("g")
+        .attr("class", "timeline_yaxis")
+        .attr("transform", "translate(" + y_legend_leftspace + "," + y_legend_topspace + ")")
+        .call(yAxis);
+
+    }else{
+        var yAxisContainer = content.append("g")
+        .attr("class", "timeline_yaxis")
+        .attr("transform", "translate(" + y_legend_leftspace + "," + y_legend_topspace + ")");
+    } 
+        var xAxisContainer = content.append("g")
+         .attr("class", "timeline_xaxis")
+         .attr("transform", "translate(" + y_legend_leftspace + ", " + (svgheight-x_legend_space) + ")");
+
+
+
+
+     this.getSpeedAverage = function(data, num){
+         var sum = 0;
+         for(var i=0; i<data.length; i++){
+             sum += data[i] * (i + 1);
+         }
+         var average = sum/num;
+         return average;               
+     };
+
+     var datalist = [];
+
+    this.getName = function(){
+            return name;
+        };
+
+     this.update = function(data){
+         x_max += 0.05;
+
+
+        xAxisScale = d3.scale.linear()
+             .domain([0,x_max])
+             .range([0,chartwidth]);
+
+         var xAxis = d3.svg.axis()
+                 .scale(xAxisScale)
+                 .orient("bottom")
+                 .ticks(3)
+                 .tickSize(5,5);
+
+         xAxisContainer.transition().duration(1000).ease("linear").call(xAxis);
+
+         var votes = 0;
+         var steplength = 5;
+         for(var i in data){
+             votes += data[i];
+         }
+        if(countpersons === false){
+            datalist.push(this.getSpeedAverage(data, votes));
+        }else{
+            datalist.push(votes);
+        }
+        
+        if(countpersons === true){ 
+        yAxisScale = d3.scale.linear()
+            .domain([0, d3.max(datalist)])
+            .range([chartheight, 0]);
     
+        yAxis = d3.svg.axis()
+             .scale(yAxisScale)
+             .orient("left")
+             .ticks(5, ">")
+             .tickSize(5,0);
+     
+        yAxisContainer.transition().duration(1000).ease("linear").call(yAxis);
+        }
+         var linien = content.selectAll(".speeddata")
+             .data(datalist);
+
+         //enter
+         linien.enter()
+             .append("line")
+             .attr("class", "speeddata")
+             .attr("x1", function(d,i){
+                 if(i===0){
+                     return chartwidth + y_legend_leftspace;
+                 }else{                           
+                     return ((i+1)*chartwidth/datalist.length + y_legend_leftspace);
+                 }})
+             .attr("y1", function(d,i){
+                 if(isNaN(d)){
+                     this.style.stroke = "red";
+                     //linien[i][0].attr("stroke", "red");
+                     return yAxisScale(3) + y_legend_topspace;
+                 }
+                if(i===0){
+                     return yAxisScale(d) + y_legend_topspace;
+                }else{
+                     if(isNaN(datalist[i-1])){
+                         this.style.stroke = "transparent";
+                         return yAxisScale(3) + y_legend_topspace;
+                     }else{ 
+                        return yAxisScale(datalist[i-1]) + y_legend_topspace;
+                      }
+                }})
+             .attr("x2", function(d,i){
+                 if(i===0){
+                     return chartwidth + y_legend_leftspace;
+                 }else{
+                     return ((i+2)*chartwidth/datalist.length + y_legend_leftspace);
+                 }})
+             .attr("y2", function(d,i){
+                 if(isNaN(d)){
+                     
+                    return yAxisScale(3)+ y_legend_topspace;
+                 }
+                     return yAxisScale(d) + y_legend_topspace;
+                 })
+             .style("stroke-width", 2);
+
+
+         //update
+        if(countpersons === false){
+         
+        //Speeddata
+            linien.transition()
+                .duration(1000)
+                .ease("linear")
+                .attr("x1", function(d,i){
+                       return (i*chartwidth/datalist.length) + y_legend_leftspace;
+                   })
+                .attr("x2", function(d,i){return ((i+1)*chartwidth/datalist.length) + y_legend_leftspace;});
+        }else{
+            
+        //Personcount
+            linien.transition()
+                .duration(1000)
+                .ease("linear")
+                .attr("x1", function(d,i){
+                       return (i*chartwidth/datalist.length) + y_legend_leftspace;
+                   })
+                .attr("x2", function(d,i){return ((i+1)*chartwidth/datalist.length) + y_legend_leftspace;})
+                .attr("y1", function(d,i){
+                if(i===0){
+                    return yAxisScale(d) + y_legend_topspace;
+                }else{
+                    return yAxisScale(datalist[i-1]) + y_legend_topspace;
+                      }
+                })
+                .attr("y2", function(d,i){
+                    return yAxisScale(d) + y_legend_topspace;
+                });
+        }
+         
+     };
+ } 

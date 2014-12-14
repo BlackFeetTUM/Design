@@ -11,9 +11,14 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="../js/libs/d3/d3.v3.js" charset="utf-8"></script>
+        <script src="Container.js"></script>
+        <script src="Inputcontrol.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery/jquery.js"></script>
+        <script type="text/javascript" src="../js/libs/jquery-ui-1.11.2/jquery-ui.min.js"></script>
         <link href="interact/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     </head>
-    <body class="body">
+    <body class="body" onload="inputcontrolinit()">
         <div id="header"></div>
         <a><img id="link-icon" src="arrow.svg"/>Registration</a>
         <div class="content">
@@ -22,23 +27,25 @@ and open the template in the editor.
                 <label>Registration</label>
                 </div>
                 <div class="input-container">
-                <input type="text" name="username" id="username" value="Username"/>
+                    <input type="text" name="username" id="username" value="Username"/>
                 </div>
                 <div class="input-container">
-                <input type="text" name="institution" id="institution" value="Institution"/>
+                    <input type="text" name="institution" id="institution" value="Institution"/>
                 </div>
                 <div class="input-container">
-                <input type="text" name="email" id="email" value="Email address"/>
+                    <input type="text" name="email" id="email" value="Email address"/>
                 </div>                
                 <div class="input-container">
-                <input type="text" name="password" id="password" value="Password"/>
+                    <input type="text" name="password" id="password" value="Password"/>
                 </div>
                 <div class="input-container">
-                <input type="text" name="password-confirm" id="password-confirm" value="Confirm password"/>
+                    <input type="text" name="password-confirm" id="password-confirm" value="Confirm password"/>
                 </div>               
                 <input class="submit" type="submit" value=""/>
             </form>
         </div>
         <img id="logo" src="inter.act logo2.svg" alt="logo"/>
+        <script>
+        </script>
     </body>
 </html>

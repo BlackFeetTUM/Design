@@ -110,6 +110,13 @@ input, label {
   border-style: solid;
   min-width: 200px;
   max-width: 450px;
+  padding-left: 5%;
+}
+
+label span{
+    display: block;
+    position: relative;
+    top: 20%;
 }
 
 /* line 49, ../sass/screen.scss */
@@ -122,7 +129,6 @@ label {
   background-image: linear-gradient(to bottom right, #31a805, #087f01);
   margin-bottom: 15px;
   font-size: 1.5em;
-  padding-left: 2px;
 }
 
 /* line 55, ../sass/screen.scss */

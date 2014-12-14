@@ -16,6 +16,11 @@ body {
   background-image: linear-gradient(to right, #f0f0f0, #ffffff 80%, #f0f0f0);
   font-family: "Calibri";
 }
+
+button, select{
+    cursor: pointer;
+}
+
 #header{
     //background-image: linear-gradient(to bottom, #2fa805, #087f01);
     min-width: 200px;
@@ -33,11 +38,11 @@ body {
     text-align: center;
     cursor: pointer;
 }
-#header #statistics{
+#header #header-left{
     width: 25%;
 }
 
-#header #statistics:hover #statisticsmenu{
+#header #header-left:hover #statisticsmenu{
     left: 0px;
     
 }
@@ -68,12 +73,12 @@ li:hover{
     background-color: orange;
     cursor: pointer;
 }
-#header #navigation{
+#header #header-middle{
     border-right: solid black 1px;
 }
 
 
-#header #dashboard{
+#header #title{
     width: 40%;
     height: 50px;
     font-size: 2em;
@@ -89,7 +94,7 @@ li:hover{
     #header{
         margin-bottom: 20px;
     }
-    #header #dashboard{
+    #header #title{
         display: none;
     }
     #header div{
@@ -101,13 +106,13 @@ li:hover{
         border-bottom-width: 1px;
         border-bottom-style:  solid;
     }
-    #header #statistics{
+    #header #header-left{
         width: 32%;
     }
     #header #statisticsmenu{
         width: 32%;
     }
-    #header #navigation{
+    #header #header-middle{
         border-right-width: 2px;
     }
 }
@@ -122,14 +127,6 @@ li:hover{
   min-height: 200px;
 }
 
-/*#questionalert{
-    width: 270px;
-    margin-bottom: 10px;
-    text-align: center;
-    position: relative;
-    float: left;
-    cursor: pointer;
-}*/
 .personcounter{
     width: 270px;
     text-align: center;
@@ -164,7 +161,7 @@ li:hover{
     font-size: 3em;
     position: relative;
     text-align: right;
-    right: 115px;
+    width: 155px;
 }
 
 .spectators{
@@ -191,7 +188,7 @@ li:hover{
     font-family: "Calibri";
     padding-top: 10px;
     float: left;
-    cursor: pointer;
+    cursor: move;
 }
 #questionalert{
     text-align: center;
@@ -236,7 +233,7 @@ li:hover{
     position: relative;
     left: 35px;
 }
-.linepie, .barchart, .range, .piechart, .xborder, .xborder2{
+.linepie, .barchart, .range, .piechart, .xborder, .xborder2, .timeline{
     position: static;
     padding-top: 30px;
 
@@ -244,8 +241,12 @@ li:hover{
 
 .barchart rect:hover{
     fill: orange;
+    cursor: pointer;
 }
-
+.speeddata{
+    stroke: green;
+    fill: green;
+}
 .xaxis text, yaxis text{
     font: 10px sans-serif;
 }
@@ -256,6 +257,26 @@ li:hover{
     //shape-rendering: crispEdges;
 }
 
+.timeline_xaxis text, .timeline_yaxis text {
+  font: 10px sans-serif;
+}
+
+.speeddata{
+    stroke: green;
+    fill: green;
+}
+
+.timeline_xaxis path, .timeline_yaxis path, .time_linexaxis line, .timeline_yaxis line{
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.timeline_xaxis path, .timeline_xaxis line, .timeline_yaxis path, .timeline_yaxis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
 
 .clearfix:after{
     content: ".";

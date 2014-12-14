@@ -17,7 +17,7 @@ and open the template in the editor.
     </head>
     <body>
         <div id="header" class="clearfix">
-            <div id="statistics">Statistics
+            <div id="header-left">Statistics
                 <div id="statisticsmenu">
                     <ul>
                         <li id="speedcontrol">Speedcontrol</li>
@@ -26,9 +26,9 @@ and open the template in the editor.
                     </ul>
                 </div>
             </div>
-            <div id="dashboard">Dashboard</div>
-            <div id="navigation">Navigation</div>
-            <div id="stopevent">Stop event</div>
+            <div id="title">Dashboard</div>
+            <div id="header-middle">Navigation</div>
+            <div id="header-right">Stop event</div>
         </div>
 
         
@@ -43,18 +43,26 @@ and open the template in the editor.
             d3.select("#students").on("click", function(){
                 test1.addChart("personcounter");
             });
+            d3.select("#header-right").on("click", function(){
+                var userinput = confirm("Do you really want to stop the event?");
+                if(userinput === true){
+                    clearInterval(schleife);
+                }
+                
+            });
             test1.addChart("personcounter");
-            test1.addChart("barchart");
+            test1.addChart("timeline");
             crazy = new QuestionAlert("depp");
             var data = generateData(5,numPersons);
             test1.actualize(data);
-            setInterval(function(){
+            var schleife = setInterval(function(){
                 var result = countPersons();
                 if(result < 0 && numPersons > 0){
                     numPersons += result;
                 }else if(result >= 0){
                     numPersons += result;
-                }               
+                }
+                
                 crazy.actualize();
                 data = generateData(5, numPersons);
 //                if(switcher === 3){
@@ -64,7 +72,7 @@ and open the template in the editor.
 //                    data = generateData(5, 200);
 //                    switcher += 1;
 //                }
-                test1.actualize(data);                
+                test1.actualize(data);
             }, 3000);
         </script>            
             
