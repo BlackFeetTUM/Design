@@ -27,7 +27,7 @@ and open the template in the editor.
             <div id="header-right">Log out</div>
         </div>
         <div class="content">
-            <form>
+            <form method="post" action="phpOperations/createLecture.php">
                 <div class="label-container">
                     <label><span>Create event</span></label>
                 </div>

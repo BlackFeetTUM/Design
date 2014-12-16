@@ -16,9 +16,9 @@ and open the template in the editor.
     </head>
     <body class="body" onload="inputcontrolinit()">
         <div id="header"></div>
-        <a><img id="link-icon" src="arrow.svg"/>Registration</a>
+        <a href="registration.php"><img id="link-icon" src="arrow.svg"/>Registration</a>
         <div class="content">
-            <form>
+            <form method="post" action="phpOperations/login.php">
                 <div class="label-container">
                 <label>Login</label>
                 </div>
@@ -31,7 +31,7 @@ and open the template in the editor.
                 <input class="submit" type="submit" value=""/>
 
             </form>
-            <form>
+            <form method="post" action="phpOperations/joinEvent.php">
                 <div class="label-container">
                 <label>Join Event</label>
                 </div>

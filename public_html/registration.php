@@ -22,7 +22,7 @@ and open the template in the editor.
         <div id="header"></div>
         <a><img id="link-icon" src="arrow.svg"/>Registration</a>
         <div class="content">
-            <form>
+            <form method="post" action="phpOperations/registration.php">
                 <div class="label-container">
                 <label>Registration</label>
                 </div>
@@ -34,7 +34,13 @@ and open the template in the editor.
                 </div>
                 <div class="input-container">
                     <input type="text" name="email" id="email" value="Email address"/>
-                </div>                
+                </div>    
+                <div class="input-container">
+                    <input type="text" name="prename" id="prename" value="Vorname"/>
+                </div>  
+                <div class="input-container">
+                    <input type="text" name="surname" id="surname" value="Nachname"/>
+                </div>              
                 <div class="input-container">
                     <input type="text" name="password" id="password" value="Password"/>
                 </div>
