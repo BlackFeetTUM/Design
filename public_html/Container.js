@@ -88,12 +88,14 @@
             }
             if(chart === "timeline"){
                 $("#" + id).css("height", timeline_height);
+                auswahl.style("top", "10px");
+                auswahl.style("left", "80px");
                 i = new Timeline(id, chartcounter, true);
             }
             
             //DELETE BUTTON                      
             button.on("click", function(){
-                   copy.remove("chart" + chartcounter2);
+                   copy.remove("personchart" + chartcounter2);
                    $(".personchartcontainer#" + id).remove();
                });
 
@@ -106,17 +108,23 @@
         
         this.changeCharttype = function(id, charttype){
             var copy = this;
-            $("#chart" + id).remove();
+            $("#personchart" + id).remove();
             $("#personchartcontainer" + id + " .slowfast").remove();
-            copy.remove("chart" + id);
+            copy.remove("personchart" + id);
             var container = d3.select("#personchartcontainer" + id);
             if(charttype === "Number"){
+                auswahl = d3.select("#personchartcontainer" + id + " select");
+                auswahl.style("top", "110px");
+                auswahl.style("left", "90px");
                 container.style("height", number_height + "px");
                 i = new Personcounter("personchartcontainer" + id, id);
             
             }else if(charttype === "Timeline"){
+                auswahl = d3.select("#personchartcontainer" + id + " select");
+                auswahl.style("top", "10px");
+                auswahl.style("left", "80px");
                 container.style("height", timeline_height + "px");
-                i = new Timeline("personchartcontainer" + id, id, false);
+                i = new Timeline("personchartcontainer" + id, id, true);
             }
             this.chartlist[i.getName()] = i;
             
@@ -748,7 +756,9 @@
     }
         
     function Timeline(container, id, countpersons){
-     var name = "chart" + id;
+     if(countpersons === true){
+         var name = "personchart" + id;
+     }else var name = "chart" + id;
      var margin_right = 20;
      var svgwidth = 270 - margin_right;
      var svgheight = 180;
@@ -759,10 +769,13 @@
      var chartheight = svgheight - y_legend_topspace - x_legend_space;
      var chartwidth = svgwidth - y_legend_leftspace;
      var svg = d3.select("#" + container).append("svg")
-             .attr("class", "timeline")
-             .attr("id", "chart" + id)
+             .attr("class", "timeline")        
              .attr("height", svgheight)
              .attr("width", svgwidth);
+    
+    if(countpersons === true){
+             svg.attr("id", "personchart" + id);
+    }else svg.attr("id", "chart" + id);
 
      var content = svg.append("g")
              .attr("class", "content");    

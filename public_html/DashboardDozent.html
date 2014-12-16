@@ -52,30 +52,31 @@ and open the template in the editor.
                 
             });
             test1.addChart("timeline");
+            test2.addChart("timeline");
             crazy = new QuestionAlert("depp");
             var data = generateData(5,numPersons);
             test1.actualize(data);
             test2.actualize(data);
-//            var schleife = setInterval(function(){
-//                var result = countPersons();
-//                if(result < 0 && numPersons > 0){
-//                    numPersons += result;
-//                }else if(result >= 0){
-//                    numPersons += result;
+            var schleife = setInterval(function(){
+                var result = countPersons();
+                if(result < 0 && numPersons > 0){
+                    numPersons += result;
+                }else if(result >= 0){
+                    numPersons += result;
+                }
+                
+                crazy.actualize();
+                data = generateData(5, numPersons);
+//                if(switcher === 3){
+//                    data = generateData(5, 0);
+//                    switcher = 0;
+//                }else{
+//                    data = generateData(5, 200);
+//                    switcher += 1;
 //                }
-//                
-//                crazy.actualize();
-//                data = generateData(5, numPersons);
-////                if(switcher === 3){
-////                    data = generateData(5, 0);
-////                    switcher = 0;
-////                }else{
-////                    data = generateData(5, 200);
-////                    switcher += 1;
-////                }
-//                test1.actualize(data);
-//                test2.actualize(data);
-//            }, 3000);
+                test1.actualize(data);
+                test2.actualize(data);
+            }, 3000);
         </script>            
             
         </div>
