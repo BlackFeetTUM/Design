@@ -38,7 +38,7 @@
         var questions = $("#questions");
         questions.text(questionnumber);
         var button = questionalert.append("button");
-        button.text("X");
+        button.text("\u2713");
         button.on("click", function(){
             if(questionnumber > 0){
                 questionnumber = questionnumber - 1;            
@@ -69,7 +69,7 @@
        
         this.addChart = function(chart){
             chartcounter += 1;
-            var id = "chartcontainer" + chartcounter;
+            var id = "personchartcontainer" + chartcounter;
             var chartcounter2 = chartcounter;
             var copy = this;
             $("#content").append("<div class='personchartcontainer' id='" + id + "'></div>");
@@ -84,7 +84,6 @@
             button.text("X");
             if(chart === "number"){
                 $("#" + id).css("height", number_height);
-                auswahl.style("display", "none");
                 i = new Personcounter(id, chartcounter);
             }
             if(chart === "timeline"){
@@ -95,10 +94,10 @@
             //DELETE BUTTON                      
             button.on("click", function(){
                    copy.remove("chart" + chartcounter2);
-                   $(".chartcontainer#" + id).remove();
+                   $(".personchartcontainer#" + id).remove();
                });
 
-            $(".chartcontainer").draggable();
+            $(".personchartcontainer").draggable();
             this.chartlist[i.getName()] = i;
                        
             //CHART-SELECTBOX            
@@ -726,10 +725,10 @@
     }
     
     function Personcounter(container, id){
-        var name = "chart" + id;
+        var name = "personchart" + id;
         var numPersons = 0;
-        $("#" + container).append("<div id='chart"+ id + "'><h2>Spectators</h2><div id='spectators" + id + "' class='spectators'></div></div>");
-        var personcounter = d3.select("#chart" + id )
+        $("#" + container).append("<div id='personchart"+ id + "'><h2>Spectators</h2><div id='spectators" + id + "' class='spectators'></div></div>");
+        var personcounter = d3.select("#personchart" + id )
                 .attr("class", "personcounter clearfix");
         var spectators = $("#spectators" + id);
         spectators.text(numPersons);

@@ -139,11 +139,13 @@ li:hover{
     border-style: solid;
     border-width: 1px;
     border-color: #AAA;
+	color: #087f01; 
     width: 25px;
     background-color: #FFF;
     position: relative;
     top: -40px;
     left: 40px;
+	font-weight: bold;
 }
 #questionalert h2{
     font-size: 26px;
@@ -151,7 +153,7 @@ li:hover{
 }
 
 .personcounter h2{
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 0px;
     position: relative;
     left: -30px;
@@ -165,11 +167,12 @@ li:hover{
 }
 
 .spectators{
-    font-size: 90px;
+    font-size: 70px;
     position: relative;
     line-height: 1em;
+    top: -5px;
 }
-.chartcontainer{
+.chartcontainer, .personchartcontainer{
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
@@ -177,7 +180,7 @@ li:hover{
     font-size: 15px;
 }
 
-.chartcontainer, #questionalert{
+.chartcontainer, #questionalert, .personchartcontainer{
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
@@ -196,7 +199,7 @@ li:hover{
     border-color: transparent;
 }
 @media all and (max-width: 410px){
-    .chartcontainer{
+    .chartcontainer, .personchartcontainer{
         float: none;
         margin: 0 auto;
         margin-bottom: 10px;
@@ -215,7 +218,16 @@ li:hover{
     font-size: 18px;
     text-align: center;
 }
-.chartcontainer button{
+
+.personchartcontainer select{
+    position: absolute;
+    left: 90px;
+    top: 110px;
+    font-family: "Calibri";
+    font-size: 18px;
+    text-align: center; 
+}
+.chartcontainer button, .personchartcontainer button{
     position: absolute;
     left: 200px;
     top: 10px;
